@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+}
+
+.loader .l {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    animation: move 10s linear infinite;
+    transform: translateY(40px);
+    overflow: hidden;
+}
+
+.center {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section {
+    text-align: justify;
+    width: 70%;
+
+}
+
+
+@keyframes move {
+    0% {
+        opacity: 0.3;
+        transform: translateY(-800px) rotate(0deg);
+    }100% {
+        opacity: 1;
+        transform: translateY(40px) rotate(360deg);
+    }
+}
