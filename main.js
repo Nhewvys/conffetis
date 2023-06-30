@@ -1,7 +1,7 @@
 let q = document.querySelector('.loader');
 let btn = document.querySelector('button');
 
-btn.onclick = function(){
+
 
   function getRandomArbitrary(min, max) {
   return Math.floor(Math.random() * (max - min) + min)
@@ -27,6 +27,3 @@ btn.onclick = function(){
 
     q.appendChild(l);
   }
-}
-
-
